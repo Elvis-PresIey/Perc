@@ -1,5 +1,5 @@
-#ifndef MYLIST_LIST_H_
-#define MYLIST_LIST_H_
+#ifndef SOLUTIONS_MYLIST_LIST_H_
+#define SOLUTIONS_MYLIST_LIST_H_
 
 #pragma once
 
@@ -8,8 +8,8 @@ class Sset {
   int *val;
   int* h;
   int size;
-  Sset() {};
-  Sset(int size_);
+  Sset() {}
+  explicit Sset(int size_);
   void singleton(int i);
   void merge(int i, int j);
   int search(int i);
@@ -17,4 +17,4 @@ class Sset {
   ~Sset();
 };
 
-#endif
+#endif  // SOLUTIONS_MYLIST_LIST_H_

@@ -16,7 +16,7 @@ void Sset::singleton(int i) {
   if (i < 0 || i > size || val[i] != -1)
     throw "BAD INDEX";
   val[i] = i;
-  h[i] = 0;	
+  h[i] = 0;
 }
 
 void Sset::merge(int i, int j) {
@@ -30,9 +30,9 @@ void Sset::merge(int i, int j) {
     while (val[b] != b)
       b = val[b];
     if (a != b) {
-      if (h[a] < h[b])
+      if (h[a] < h[b]) {
         val[a] = b;
-      else {
+	  } else {
         val[b] = a;
         if (h[a] == h[b])
           ++h[a];
@@ -42,10 +42,10 @@ void Sset::merge(int i, int j) {
 }
 
 int Sset::search(int i) {
-  if (i < 0 || i > size || val[i] == -1) 
+  if (i < 0 || i > size || val[i] == -1)
     throw "BAD INDEX";
   while (val[i] != i)
-    i = val[i];	
+    i = val[i];
   return val[i];
 }
 

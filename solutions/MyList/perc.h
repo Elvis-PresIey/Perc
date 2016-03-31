@@ -1,5 +1,5 @@
-#ifndef MYLIST_PERC_H_
-#define MYLIST_PERC_H_
+#ifndef SOLUTIONS_MYLIST_PERC_H_
+#define SOLUTIONS_MYLIST_PERC_H_
 
 #pragma once
 
@@ -11,4 +11,4 @@
 void countino(Sset *set, int *co, int n, int m);
 void preparation(Sset *set, int n, int m);
 
-#endif  // MYLIST_PERC_H
+#endif  // SOLUTIONS_MYLIST_PERC_H_
